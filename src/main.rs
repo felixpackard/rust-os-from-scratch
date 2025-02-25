@@ -11,6 +11,8 @@ use rust_os_from_scratch::println;
 pub extern "C" fn _start() -> ! {
     println!("Hello World{}", "!");
 
+    rust_os_from_scratch::init();
+
     #[cfg(test)]
     test_main();
 
